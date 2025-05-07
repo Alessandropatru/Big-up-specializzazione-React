@@ -1,0 +1,117 @@
+
+
+.bg-custom-total {
+  background-color: #0D1321;
+}
+
+h1{
+    color: #4dff07;
+    font-weight: 700;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+
+.footer {
+  margin-top: 5rem;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+ 
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Effetto ombra galattico */
+}
+
+/* --- LINK SOCIAL --- */
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px ;
+  
+}
+
+.footer .social-links a {
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #00b8b8; /* Colore turchese di hover */
+  transform: scale(1.2); /* Effetto di ingrandimento durante l'hover */
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Effetto luminoso */
+}
+
+/* --- SEZIONE INFORMAZIONI --- */
+.footer .info {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.footer .info a {
+  color: #00b8b8; /* Link in turchese */
+  text-decoration: none;
+  
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer .info a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glow al passaggio del mouse */
+}
+
+/* --- SEZIONE COPYRIGHT --- */
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.footer .copyright p {
+  margin-top: 10px;
+ 
+  
+}
+
+
+
+/* --- PULSANTE DI ISCRIZIONE --- */
+.btn-footer {
+  padding: 12px 30px;
+  background-color: #47173b;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3); /* Glow simile al pulsante di registrazione */
+}
+
+.btn-footer:hover {
+  background-color: #7a00b3;
+  transform: translateY(-3px); /* Effetto hover per un look futuristico */
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.6); /* Più glow e profondità */
+}
+
+/* --- EFFETTI DELL'ANIMAZIONE DEL FOOTER --- */
+@keyframes footerBackground {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1); /* Movimento di ingrandimento come se fosse un effetto spaziale */
+  }
+}
+
+.footer {
+  animation: footerBackground 15s infinite alternate;
+}

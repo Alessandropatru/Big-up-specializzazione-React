@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* Applica il font a tutta la pagina */
+* {
+  font-family: 'Russo One', sans-serif;;
+}
+
+
+
+/* Sidebar base */
+.your-sidebar-wrapper {
+    width: 14rem;
+    position: relative;
+    height: 28rem;
+    top: 15rem;
+    z-index: 1000;
+    background-color: #0a0f1c;
+    box-shadow: 4px 0 12px rgba(0, 255, 100, 0.2);
+    padding: 20px 10px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+/* Sidebar chiusa */
+.your-sidebar-wrapper.closed {
+    width: 4.5rem; /* compattata */
+}
+
+/* Sidebar aperta */
+.your-sidebar-wrapper.open {
+    width: 14rem; /* larghezza originale */
+}
+
+/* Bottone toggle */
+.toggle-drop-btn {
+    position: relative;
+    top: 44.5rem;
+    left: 2rem;
+    width: 30px;
+    height: 30px;
+    background-color: #dae2de;
+    border: none;
+    border-radius: 50%;
+    color: #0a0f1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1100;
+    box-shadow: 0 0 5px rgba(0, 255, 100, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown utente */
+.menu-dropdown-new {
+    margin-bottom: 3rem;
+    position: relative;
+    top: 3.5rem;
+}
+
+/* Corpo della pagina */
+.custom-body-initial-page {
+    position: relative;
+    bottom: 20rem;
+    left: 5rem;
+}
+.spinner-game {
+    margin: 2rem auto;
+    border: 6px solid rgba(255, 255, 255, 0.1);
+    border-top: 6px solid #0ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

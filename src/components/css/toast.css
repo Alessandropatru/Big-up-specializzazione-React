@@ -1,0 +1,127 @@
+.toast-container-login {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    pointer-events: none;
+    animation: bounceDrop 0.8s ease-out;
+  }
+  
+  .toast-my {
+    position: relative;
+    background: linear-gradient(135deg, #ff8c00, #ffe100);
+    color: #fff7dc;
+    padding: 18px 36px;
+    border-radius: 16px;
+    box-shadow: 
+      0 0 15px rgba(255, 111, 0, 0.9),
+      0 0 30px rgba(255, 207, 64, 0.6),
+      inset 0 0 10px rgba(255, 255, 255, 0.2);
+    font-size: 17px;
+    font-family: 'Bangers', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    overflow: hidden;
+    transform: scale(1);
+    animation: bounceToast 5s ease-in-out forwards, shakeCrazy 1s infinite alternate;
+    border: 4px dashed #ffde59;
+    background-size: 200% 200%;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .toast-my::before {
+    content: "💣";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    animation: bombWiggle 0.7s infinite;
+  }
+  
+  .toast-success {
+    background: linear-gradient(135deg, #1eff8d, #00d9a3);
+    box-shadow: 0 0 15px #00ffbf, 0 0 40px #1eff8d;
+    border-color: #00ffc3;
+    color: rgb(255, 174, 0);
+  }
+  
+  .toast-error {
+    background: linear-gradient(135deg, #ff0055, #ff7744);
+    box-shadow: 0 0 20px #ff1a1a, 0 0 50px #ff6f61;
+    border-color: #ff4444;
+    
+  }
+  
+  .toast-info {
+    background: linear-gradient(135deg, #00b8ff, #6fe3ff);
+    box-shadow: 0 0 15px #66d9ff, 0 0 30px #00b8ff;
+    border-color: #33ccff;
+  }
+  
+  .toast-icon {
+    font-size: 26px;
+    animation: pulse 1s infinite;
+    text-shadow: 1px 1px #000;
+  }
+  
+  .toast-text {
+    flex: 1;
+    font-weight: bold;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 0.5px;
+  }
+  
+  .toast-decoration.explosion {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 28px;
+    height: 28px;
+    background: radial-gradient(circle, #ffe100, #ff5100);
+    border-radius: 50%;
+    animation: explode 0.6s ease-out infinite alternate;
+    box-shadow: 0 0 20px #ffd700;
+  }
+  
+  /* 🎞️ ANIMATIONS */
+  @keyframes bounceDrop {
+    0% { transform: translate(-50%, -50px); opacity: 0; }
+    100% { transform: translate(-50%, 0); opacity: 1; }
+  }
+  
+  @keyframes bounceToast {
+    0% { transform: scale(0.8); opacity: 0; }
+    10% { transform: scale(1.1); opacity: 1; }
+    20% { transform: scale(1); }
+    90% { opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0; }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.85; }
+  }
+  
+  @keyframes explode {
+    0% { transform: scale(0.9) rotate(0deg); }
+    100% { transform: scale(1.5) rotate(45deg); }
+  }
+  
+  @keyframes shakeCrazy {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px) rotate(-1deg); }
+    50% { transform: translateX(3px) rotate(1deg); }
+    75% { transform: translateX(-2px) rotate(-0.5deg); }
+    100% { transform: translateX(2px) rotate(0.5deg); }
+  }
+  
+  @keyframes bombWiggle {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+  }
+  
