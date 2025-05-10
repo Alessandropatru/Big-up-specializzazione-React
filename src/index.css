@@ -23,7 +23,11 @@ h1{
  
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Effetto ombra galattico */
 }
-
+@media (max-width: 768px) {
+  .footer{
+    margin-top: 15rem;
+  }
+}
 /* --- LINK SOCIAL --- */
 .footer .social-links {
   display: flex;
@@ -102,16 +106,3 @@ h1{
   box-shadow: 0 0 25px rgba(255, 0, 255, 0.6); /* Più glow e profondità */
 }
 
-/* --- EFFETTI DELL'ANIMAZIONE DEL FOOTER --- */
-@keyframes footerBackground {
-  0% {
-      transform: scale(1);
-  }
-  100% {
-      transform: scale(1.1); /* Movimento di ingrandimento come se fosse un effetto spaziale */
-  }
-}
-
-.footer {
-  animation: footerBackground 15s infinite alternate;
-}

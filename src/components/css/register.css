@@ -1,4 +1,4 @@
-/* --- BACKGROUND INTERATTIVO CON EFFETTI DI MOVIMENTO --- */
+
 .register-page {
     position: relative;
     height: 100vh;
@@ -14,7 +14,7 @@
 
 
 
-/* --- FORM CON EFFETTI DI ENTRATA GALATTICA --- */
+
 .register-form {
     
     width: 100%;
@@ -32,7 +32,7 @@
     backdrop-filter: blur(15px);
 }
 
-/* Animazione di apertura del form */
+
 @keyframes formReveal {
     0% {
         opacity: 0;
@@ -44,7 +44,7 @@
     }
 }
 
-/* --- INPUTS E PULSANTI CON EFFETTI SPAZIALI --- */
+
 .register-input {
     width: 100%;
     padding: 12px;
@@ -72,7 +72,7 @@
     transform: scale(1.05);
 }
 
-/* Animazione di rotazione e riflesso per errore */
+
 .input-error {
     border-color: red;
     animation: rotateError 0.5s ease-in-out forwards;
@@ -94,7 +94,7 @@
 
 
 
-/* --- GLOW E REFLESSO SUGLI INPUT --- */
+
 .register-input:focus {
     border-color: #00b8b8;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
@@ -102,7 +102,7 @@
 }
 
 
-/* --- INPUT RIFLESSO --- */
+
 .register-input:focus::after {
     content: '';
     position: absolute;
@@ -117,13 +117,13 @@
     border-radius: 50%;
     transition: all 0.3s ease;
 }
-/* --- STILE PRINCIPALE DEL BOTTONE --- */
+
 .register-button {
     margin-top: 2rem;
     width: 100%;
     padding: 16px;
     font-size: 20px;
-    background-color: #6200ea; /* Colore viola futuristico */
+    background-color: #6200ea; 
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -137,15 +137,15 @@
     box-shadow: 0 0 10px rgba(98, 0, 234, 0.7), 0 0 20px rgba(98, 0, 234, 0.7), 0 0 30px rgba(98, 0, 234, 0.7); /* Ombre colorate */
 }
 
-/* --- ANIMAZIONE DI HOVER CON EFFETTI GLOW E SCALING --- */
+
 .register-button:hover {
-    transform: scale(1.1) rotate(5deg); /* Scelta di un effetto di scaling e rotazione per dinamismo */
-    background-color: #ff0e0e; /* Colore di hover acceso */
+    transform: scale(1.1) rotate(5deg); 
+    background-color: #ff0e0e; 
     color: #fff;
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 60px rgba(255, 0, 0, 0.6); /* Ombre intense */
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 60px rgba(255, 0, 0, 0.6);
 }
 
-/* --- EFFETTO DI ESPLOSIONE ALL'HOVER --- */
+
 .register-button:before {
     content: "";
     position: absolute;
@@ -160,7 +160,7 @@
     animation: explosion 0.6s ease-out forwards;
 }
 
-/* --- ANIMAZIONE ESPLOSIONE --- */
+
 @keyframes explosion {
     0% {
         transform: translate(-50%, -50%) scale(0);
@@ -172,7 +172,7 @@
     }
 }
 
-/* --- EFFETTO DI TESTO CON ANIMAZIONE LUMINOSA --- */
+
 .register-button span {
     position: relative;
     z-index: 1;
@@ -185,7 +185,7 @@
     animation: textGlow 1.5s ease-in-out infinite alternate;
 }
 
-/* --- ANIMAZIONE LUMINOSA DEL TESTO --- */
+
 @keyframes textGlow {
     0% {
         text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 0, 0, 0.8);
@@ -195,14 +195,13 @@
     }
 }
 
-/* --- EFFETTO DI AUMENTO DIMENSIONI DEL BOTTONE ALL'HOVER --- */
 .register-button:hover:before {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* --- ANIMAZIONE DI RIPRISTINO --- */
+
 .register-button:active {
     transform: scale(1);
-    background-color: #f5a623; /* Colore di sfondo diverso al click */
+    background-color: #f5a623; 
     box-shadow: none;
 }

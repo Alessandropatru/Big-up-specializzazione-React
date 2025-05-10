@@ -46,7 +46,7 @@ export default function Avatar({ url, size = 150, onUpload }) {
 
       if (uploadError) throw uploadError
 
-      onUpload(event, filePath) // Passa al parent (AccountPage)
+      onUpload(event, filePath) 
     } catch (error) {
       alert(error.message)
     } finally {

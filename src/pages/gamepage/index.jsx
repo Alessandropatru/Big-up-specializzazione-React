@@ -22,18 +22,18 @@ export default function GamePage() {
 
     return (
         <>
-            <section className="vh-100 mb-5 ">
-                <div className="container mt-5">
+            <section className=" mb-5 ">
+                <div className="container mt-5 mb-5">
                     <div className="row text-white">
                         {/* Colonna Sinistra */}
-                        <div className="col-12 col-md-6 text-center ">
+                        <div className="col-12 col-md-6 text-center first-column ">
                             <p className="release-date">{data?.released}</p>
                             <h2 className="game-name glitch-text" data-text={data?.name}>{data?.name}</h2>
                             <p className="game-description ">About: {data?.description_raw}</p>
                         </div>
     
                         {/* Colonna Destra */}
-                        <div className="col-12 col-md-6 text-center margin-section-img mt-5">
+                        <div className="col-12 col-md-6 text-center margin-section-img mt-5 ">
                             <div className="style-game-image">
                                 <img
                                     src={data?.background_image}

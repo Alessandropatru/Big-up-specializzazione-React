@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import CardGame from "../../components/CardGame";
 import useFetchSolution from "../../hook/useFetchSolution";
+import BackToTopButton from "../../components/BackToTop";
 import "../../index.css";
 
 export default function GenrePage() {
@@ -33,6 +34,7 @@ export default function GenrePage() {
                      <CardGame   key={game.id} game={game} />
                  ))}
                 </div>
+                <BackToTopButton/>
             </div>
         </>
     );

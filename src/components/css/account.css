@@ -1,4 +1,3 @@
-/* --- BACKGROUND & GENERAL STYLING --- */
 body {
     background: linear-gradient(135deg, #0f0f1b, #151d2a);
     color: #e0f7fa;
@@ -8,7 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- PROFILE CARD --- */
 .profile-card {
     max-width: 760px;
     width: 100%;
@@ -23,7 +21,6 @@ body {
     z-index: 1000;
 }
 
-/* --- INPUT FIELDS --- */
 .form-control {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
@@ -40,7 +37,6 @@ body {
     transform: scale(1.05);
 }
 
-/* --- BUTTON --- */
 .btn-update {
     background-color: #00eaff;
     border: none;
@@ -60,11 +56,9 @@ body {
     transform: scale(1.05);
 }
 
-/* --- AVATAR --- */
 .profile-avatar {
     margin-bottom: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
 }
@@ -74,7 +68,6 @@ body {
     box-shadow: 0 0 40px rgba(0, 255, 255, 0.7);
 }
 
-/* --- ANIMATIONS --- */
 @keyframes panelIn {
     from {
         transform: translateY(30px);
@@ -109,7 +102,6 @@ body {
     }
 }
 
-/* --- SAVING / SAVED TEXT --- */
 .saving-animation {
     display: inline-flex;
     align-items: center;
@@ -124,7 +116,6 @@ body {
     text-shadow: 0 0 15px rgba(144, 255, 144, 0.8);
 }
 
-/* --- TOAST (bottom-right floating) --- */
 .custom-toast {
     position: fixed;
     bottom: 30px;
@@ -155,6 +146,7 @@ body {
         opacity: 1;
     }
 }
+
 .upload-label {
     display: inline-block;
     padding: 0.7rem 1.6rem;
@@ -167,15 +159,15 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
     position: relative;
     overflow: hidden;
-  }
-  
-  .upload-label:hover {
+}
+
+.upload-label:hover {
     background-color: #00c2d4;
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
-  }
-  
-  .upload-input {
+}
+
+.upload-input {
     position: absolute;
     top: 0;
     left: 0;
@@ -183,8 +175,9 @@ body {
     height: 100%;
     opacity: 0;
     cursor: pointer;
-  }
-  .glitch-avatar {
+}
+
+.glitch-avatar {
     border-radius: 50%;
     object-fit: cover;
     position: relative;
@@ -195,19 +188,18 @@ body {
       0 0 60px rgba(204, 0, 255, 0.2);
     animation: glitch-border 1.5s infinite linear;
     z-index: 1;
-  }
-  
-  /* Optional hover intensification */
-  .glitch-avatar:hover {
+}
+
+.glitch-avatar:hover {
     animation: glitch-border 0.5s infinite linear;
     box-shadow:
       0 0 0 4px rgba(255, 0, 102, 0.8),
       0 0 25px rgba(204, 0, 255, 0.6),
       0 0 50px rgba(255, 0, 102, 0.5),
       0 0 70px rgba(204, 0, 255, 0.3);
-  }
-  
-  @keyframes glitch-border {
+}
+
+@keyframes glitch-border {
     0% {
       box-shadow:
         0 0 0 4px rgba(255, 0, 102, 0.5),
@@ -231,8 +223,9 @@ body {
     100% {
       transform: translate(0, 0);
     }
-  }
-  @keyframes spaceEffect {
+}
+
+@keyframes spaceEffect {
     0% {
       transform: scale(0.8) rotateX(-30deg);
       opacity: 0;
@@ -245,12 +238,11 @@ body {
       transform: scale(1) rotateX(0deg);
       opacity: 1;
     }
-  }
-  .spatial-title {
-    font-size: 2.5rem;  /* Dimensione del font */
+}
+
+.spatial-title {
+    font-size: 2.5rem;
     font-weight: 600;
-   
-   
     text-transform: uppercase;
     color: #ffffff;
     position: relative;
@@ -258,11 +250,10 @@ body {
     letter-spacing: 3px;
     z-index: 1;
     padding-bottom: 5px;
-     margin-left: 6rem; 
-    
-  }
-  
-  .spatial-title::after {
+    margin-left: 6rem;
+}
+
+.spatial-title::after {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -270,28 +261,12 @@ body {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, rgba(0, 255, 255, 0.8), rgba(0, 191, 255, 0.8)); /* Gradient in varie tonalità di ciano */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.6);  /* Sfumature di luce */
-    border-radius: 4px;  /* Bordi arrotondati */
-    animation: glowing 2s ease-in-out infinite;  /* Effetto di animazione luminosa */
-  }
-  
-  @keyframes pulse {
-    0% {
-      opacity: 0.8;
-      transform: scaleX(0.8);
-    }
-    50% {
-      opacity: 1;
-      transform: scaleX(1);
-    }
-    100% {
-      opacity: 0.8;
-      transform: scaleX(0.8);
-    }
-    
-  }
-  
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.8), rgba(0, 191, 255, 0.8));
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.6);
+    border-radius: 4px;
+    animation: glowing 2s ease-in-out infinite;
+}
+
 @keyframes glowing {
     0% {
       transform: scaleX(0.9);
@@ -305,4 +280,4 @@ body {
       transform: scaleX(0.9);
       opacity: 0.5;
     }
-  }
+}

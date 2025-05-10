@@ -5,15 +5,15 @@
     align-items: center;
     position: relative;
     z-index: 1;
-  }
-  
-  .search-input-container {
+}
+
+.search-input-container {
     position: relative;
     display: flex;
     align-items: center;
-  }
-  
-  .search-input {
+}
+
+.search-input {
     background: rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(0, 255, 204, 0.3);
     border-radius: 30px;
@@ -25,28 +25,25 @@
     font-weight: bold;
     backdrop-filter: blur(8px);
     transition: all 0.4s ease;
-    box-shadow: inset 0 0 15px rgba(0, 255, 204, 0.1),
-                0 0 25px rgba(0, 255, 204, 0.2);
-  }
-  
-  .search-input:focus {
+    box-shadow: inset 0 0 15px rgba(0, 255, 204, 0.1), 0 0 25px rgba(0, 255, 204, 0.2);
+}
+
+.search-input:focus {
     outline: none;
     background: rgba(0, 20, 20, 0.5);
-    box-shadow:
-      inset 0 0 25px rgba(0, 255, 180, 0.3),
-      0 0 40px rgba(0, 255, 180, 0.4);
+    box-shadow: inset 0 0 25px rgba(0, 255, 180, 0.3), 0 0 40px rgba(0, 255, 180, 0.4);
     border-color: #00ffc3;
-  }
-  
-  .search-input::placeholder {
+}
+
+.search-input::placeholder {
     color: #00ffc3;
     opacity: 0.5;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
-  }
-  
-  .button-search {
+}
+
+.button-search {
     position: absolute;
     right: 14rem;
     bottom: -0.1rem;
@@ -60,276 +57,181 @@
     box-shadow: 0 0 15px rgba(0, 255, 180, 0.3);
     backdrop-filter: blur(5px);
     z-index: 2;
-  }
-  
-  .button-search:hover {
+}
+
+.button-search:hover {
     background: rgba(0, 255, 204, 0.6);
     color: #000;
     box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
     transform: scale(1.1);
-  }
-  
-  .button-search:active {
+}
+
+.button-search:active {
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(0, 255, 204, 0.7) inset;
-  }
-  
-  
-.dropdown-my-menu{
-    
+}
+
+.dropdown-my-menu {
     margin-left: 60%;
     margin-top: 4rem;
     border: 0px;
-    
-   
 }
-.dropdown-menu{
+
+.dropdown-menu {
     border: none !important;
-    
-    
 }
-.li-dropdown{
+
+.li-dropdown {
     background: transparent;
-   
 }
-.link-dropdown{
+
+.link-dropdown {
     background: transparent;
     text-decoration: none;
     color: rgb(0, 90, 12);
     transition: 2s;
 }
-/* Logo Styles */
-/* Logo container */
+
 .navbar-brand {
-  font-family: 'Russo One', sans-serif; /* Font moderno */
-  font-size: 3rem; /* Dimensione maggiore per il logo */
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 4px;
-  position: relative;
-  display: inline-block;
-  background: linear-gradient(145deg, #1a1aff, #00d7b3); /* Sfumatura potente */
-  -webkit-background-clip: text; /* Applica la sfumatura solo al testo */
-  color: transparent; /* Rendi il testo trasparente per far vedere il gradiente */
-  transition: all 0.5s ease-in-out;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Ombra morbida per l'effetto 3D */
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(145deg, #1a1aff, #00d7b3);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* Effetto di hover interattivo */
 .navbar-brand:hover {
-  color: #fff;
-  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.9), 0 0 25px rgba(30, 255, 69, 0.8);
-  transform: scale(1.1) rotate(3deg); /* Aggiunge rotazione e ingrandimento */
-  animation: glow 1.5s infinite alternate; /* Anima l'effetto glow */
+    color: #fff;
+    text-shadow: 0 8px 15px rgba(0, 0, 0, 0.9), 0 0 25px rgba(30, 255, 69, 0.8);
+    transform: scale(1.1) rotate(3deg);
+    animation: glow 1.5s infinite alternate;
 }
 
-/* Effetto glow pulsante */
 @keyframes glow {
-  0% {
-      text-shadow: 0 0 5px rgba(30, 255, 69, 0.7), 0 0 10px rgba(30, 255, 69, 0.5);
-  }
-  50% {
-      text-shadow: 0 0 20px rgba(30, 255, 69, 1), 0 0 40px rgba(0, 255, 150, 0.7);
-  }
-  100% {
-      text-shadow: 0 0 5px rgba(30, 255, 69, 0.7), 0 0 10px rgba(30, 255, 69, 0.5);
-  }
+    0% {
+        text-shadow: 0 0 5px rgba(30, 255, 69, 0.7), 0 0 10px rgba(30, 255, 69, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(30, 255, 69, 1), 0 0 40px rgba(0, 255, 150, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(30, 255, 69, 0.7), 0 0 10px rgba(30, 255, 69, 0.5);
+    }
 }
 
-/* Effetto di ombra per un tocco 3D al passaggio del mouse */
 .navbar-brand::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
- 
-  border-radius: 10px;
-  z-index: -1;
- 
-  transform: scale(0.98);
-  opacity: 0.8;
-  transition: all 0.5s ease;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 10px;
+    z-index: -1;
+    transform: scale(0.98);
+    opacity: 0.8;
+    transition: all 0.5s ease;
 }
 
 .navbar-brand:hover::after {
-  transform: scale(1) rotate(3deg);
-  opacity: 1;
- 
+    transform: scale(1) rotate(3deg);
+    opacity: 1;
 }
 
-/* Per garantire che il logo sia sempre centrato */
 .navbar-brand {
-  display: inline-block;
-  text-align: center;
+    display: inline-block;
+    text-align: center;
 }
 
-
-/* Stile per il menu dropdown */
 .dropdown-my-menu {
-  position: relative;
-  margin-top: 1rem;
+    position: relative;
+    margin-top: 1rem;
 }
 
 .btn-secondary {
-  background: rgba(0, 0, 0, 0.3); /* Fondo trasparente scuro */
-  border: 2px solid rgba(0, 255, 204, 0.3); /* Bordi con colore ciano trasparente */
-  border-radius: 30px;
-  color: #00ffc3; /* Colore del testo ciano */
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 20px;
-  backdrop-filter: blur(8px); /* Sfocatura sullo sfondo */
-  box-shadow: inset 0 0 15px rgba(0, 255, 204, 0.1), 0 0 25px rgba(0, 255, 204, 0.2); /* Ombra interna ed esterna */
-  transition: all 0.4s ease; /* Transizione fluida sugli effetti */
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 255, 204, 0.3);
+    border-radius: 30px;
+    color: #00ffc3;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 15px rgba(0, 255, 204, 0.1), 0 0 25px rgba(0, 255, 204, 0.2);
+    transition: all 0.4s ease;
 }
 
 .btn-secondary:hover {
-  background: rgba(0, 0, 0, 0.4); /* Più scuro al passaggio del mouse */
-  border: 2px solid rgba(0, 255, 204, 0.5); /* Bordi più intensi */
-  color: #00e6b3; /* Testo più scuro al passaggio del mouse */
-  box-shadow: inset 0 0 20px rgba(0, 255, 204, 0.3), 0 0 35px rgba(0, 255, 204, 0.4); /* Ombra più intensa */
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 255, 204, 0.5);
+    color: #00e6b3;
+    box-shadow: inset 0 0 20px rgba(0, 255, 204, 0.3), 0 0 35px rgba(0, 255, 204, 0.4);
 }
 
-/* Stile per il menu dropdown */
 .dropdown-menu {
-  background: #1c1f27; /* Colore scuro elegante */
-  border-radius: 12px;
-  padding: 1.5rem 0;
-  border: 1px solid #3b3f47; /* Bordo sottile ed elegante */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombra delicata */
-  width: 250px;
-  z-index: 1000;
-  animation: fadeInMenu 0.3s ease-out; /* Animazione per il menu */
-}
-
-.dropdown-item {
-  color: #e0f7fa; /* Colore chiaro per il testo */
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  
-  border-radius: 10px;
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transizioni più fluide */
-}
-
-.dropdown-item:hover {
-  background: #008c95; /* Colore scuro per hover */
-  color: #fff;
-  transform: scale(1.05); /* Effetto di ingrandimento durante l'hover */
-  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3), 0 0 25px rgba(0, 255, 204, 0.5); /* Ombra più forte */
+    background: #1c1f27;
+    border-radius: 12px;
+    padding: 1.5rem 0;
+    border: 1px solid #3b3f47;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    z-index: 1000;
+    animation: fadeInMenu 0.3s ease-out;
 }
 
 .dropdown-header {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #ff4081; /* Colore fucsia per il titolo */
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff4081;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Animazione di fade-in per il menu */
 @keyframes fadeInMenu {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* Stile per il bottone CTA */
-.cta {
-  background: #1c1f27; /* Colore scuro per il bottone */
-  color: #00ffc3; /* Colore testo ciano */
-  font-size: 12px; /* Font ridotto per migliorare la leggibilità */
-  font-weight: 600; /* Font bold per evidenziare */
-  padding: 6px 14px; /* Padding ridotto per una dimensione più contenuta */
-  border-radius: 20px; /* Bordo arrotondato */
-  border: 2px solid transparent; /* Bordo inizialmente invisibile */
-  text-align: center;
-  display: inline-block; /* Aggiunto per tenere il bottone a sinistra */
-  transition: all 0.3s ease; /* Transizione fluida per tutti gli effetti */
-  box-shadow: 0 4px 10px rgba(0, 255, 204, 0.2); /* Ombra leggera */
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.cta:hover {
-  background: #00ffc3; /* Cambio colore di sfondo al passaggio del mouse */
-  color: #1c1f27; /* Colore del testo cambia a scuro */
-  border: 2px solid #00ffc3; /* Aggiunta di bordo ciano durante l'hover */
-  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3); /* Ombra più intensa */
-  transform: translateY(-3px); /* Leggera spinta verso l'alto per l'effetto "cliccabile" */
-}
-
-/* Stile per il bottone Login */
-.btn-login {
-  
-  color: #fff; /* Colore del testo bianco */
-  font-size: 18px; /* Font ridotto per maggiore leggibilità */
- 
-  padding: 6px 14px; /* Padding ridotto */
-  border-radius: 20px; /* Bordi arrotondati */
-  border: 2px solid transparent; /* Bordo inizialmente invisibile */
-  text-align: center;
-  display: inline-block; /* Posizionato a sinistra */
-  transition: all 0.3s ease; /* Transizione fluida */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra delicata per dare profondità */
-}
-
-.btn-login:hover {
-  background: #00e6b3; /* Cambio di colore di sfondo verde al passaggio del mouse */
-  color: #fff; /* Colore del testo rimane bianco */
-  border: 2px solid #00e6b3; /* Aggiunta di bordo verde durante hover */
-  box-shadow: 0 4px 15px rgba(0, 230, 179, 0.3); /* Ombra verde più intensa */
-  transform: translateY(-3px); /* Leggera spinta verso l'alto per un effetto "cliccabile" */
-}
-
-/* Stile per il bottone Register */
-.btn-register {
-  
-  color: #ffffff; /* Colore del testo bianco */
-  font-size: 18px; /* Font ridotto per maggiore leggibilità */
-  
-  
-  padding: 6px 14px; /* Padding ridotto */
-  border-radius: 20px; /* Bordi arrotondati */
-  border: 2px solid transparent; /* Bordo inizialmente invisibile */
-  text-align: center;
-  display: inline-block; /* Posizionato a sinistra */
-  transition: all 0.3s ease; /* Transizione fluida */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra delicata per dare profondità */
-}
-
-.btn-register:hover {
-  background: #ff0000; /* Colore di sfondo più chiaro durante hover */
-  color: #fff; /* Colore del testo rimane bianco */
-  border: 2px solid #ff80b5; /* Aggiunta di bordo rosa durante hover */
-  box-shadow: 0 4px 15px rgba(255, 128, 181, 0.3); /* Ombra rosa più intensa */
-  transform: translateY(-3px); /* Leggera spinta verso l'alto per un effetto "cliccabile" */
-}
-
-/* Stile per il bottone LogOut */
 button.dropdown-item {
-  background: rgba(0, 0, 0, 0.7); /* Colore di sfondo scuro per il bottone */
-  color: #ff4d4d; /* Colore rosso per il bottone Logout */
-  font-weight: bold;
-  font-size: 12px; /* Font ridotto per migliore leggibilità */
-  border-radius: 20px; /* Bordo arrotondato */
-  padding: 6px 14px; /* Padding ridotto */
-  text-align: center;
-  display: inline-block; /* Posizionato a sinistra */
-  transition: all 0.3s ease; /* Transizione fluida */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra delicata per una resa più elegante */
+    background: rgba(0, 0, 0, 0.7);
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 6px 14px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button.dropdown-item:hover {
-  background: rgba(255, 77, 77, 0.8); /* Colore di sfondo rosso per hover */
-  color: #fff; /* Colore del testo bianco */
-  box-shadow: 0 0 20px rgba(255, 77, 77, 0.5), 0 0 35px rgba(255, 77, 77, 0.7); /* Ombra rossa intensa */
-  transform: translateY(-3px); /* Leggera spinta verso l'alto per un effetto "cliccabile" */
+    background: rgba(255, 77, 77, 0.8);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.5), 0 0 35px rgba(255, 77, 77, 0.7);
+    transform: translateY(-3px);
+}
+
+.btn-only-write {
+    background: transparent;
+    border: none;
+}
+
+.lik-definitivi {
+    text-decoration: none;
 }

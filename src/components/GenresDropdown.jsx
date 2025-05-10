@@ -6,10 +6,10 @@ import "./css/genresdropdown.css";
 export default function GenresDropdown() {
     const initialUrl = "https://api.rawg.io/api/genres?key=320e03e838db4408a2299c556af99cd1";
     const { data, loading, error } = useFetchSolution(initialUrl);
-    const [isOpen, setIsOpen] = useState(false);  // Stato per gestire l'apertura/chiusura del dropdown
+    const [isOpen, setIsOpen] = useState(false);  
 
 
-    const toggleDropdown = () => setIsOpen(!isOpen);  // Funzione per alternare lo stato di apertura
+    const toggleDropdown = () => setIsOpen(!isOpen);  
 
     if (loading) {
         return <div>Loading genres...</div>;

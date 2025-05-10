@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import BackToTopButton from '../../components/BackToTop';
+
 import CardGame from '../../components/CardGame';
 import "../../components/css/sidebar.css";
 
@@ -9,6 +11,7 @@ export default function HomePage() {
     );
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [showScrollTop, setShowScrollTop] = useState(false);
 
     const fetchGames = async () => {
         if (!nextPageUrl || loading) return;
@@ -18,7 +21,7 @@ export default function HomePage() {
             const response = await fetch(nextPageUrl);
             const data = await response.json();
             setGames(prev => [...prev, ...data.results]);
-            setNextPageUrl(data.next); // salva l'URL della prossima pagina
+            setNextPageUrl(data.next);
         } catch (err) {
             console.error('Errore nel caricamento giochi:', err);
             setError('Errore durante il caricamento dei giochi.');
@@ -28,16 +31,17 @@ export default function HomePage() {
     };
 
     useEffect(() => {
-        fetchGames(); // carica i primi giochi
+        fetchGames();
     }, []);
 
     useEffect(() => {
         const handleScroll = () => {
-            const nearBottom =
-                window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+            const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
             if (nearBottom && !loading) {
                 fetchGames();
             }
+
+            setShowScrollTop(window.scrollY > 300);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -57,14 +61,18 @@ export default function HomePage() {
                     </div>
                 ))}
             </div>
+
             {loading && (
-  <div className="d-flex justify-content-center">
-    <div className="spinner-game"></div>
-  </div>
-)}
-{!nextPageUrl && !loading && (
-  <p className="text-center text-white mt-4">Hai raggiunto la fine ✨</p>
-)}
+                <div className="d-flex justify-content-center">
+                    <div className="spinner-game"></div>
+                </div>
+            )}
+
+            {!nextPageUrl && !loading && (
+                <p className="text-center text-white mt-4">Hai raggiunto la fine ✨</p>
+            )}
+
+            <BackToTopButton /> 
         </div>
     );
 }

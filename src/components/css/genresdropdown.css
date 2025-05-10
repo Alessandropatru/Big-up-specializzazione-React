@@ -43,28 +43,28 @@
     
     padding: 0;
     margin: 0;
-    scrollbar-width: thin;  /* Per Firefox: scrollbar sottile */
-    scrollbar-color: #00ffff #333;  /* Per Firefox: colore del "thumb" e del "track" */
+    scrollbar-width: thin;  
+    scrollbar-color: #00ffff #333;  
     
   }
   .dropdown-list-generi::-webkit-scrollbar {
-    width: 8px;  /* Larghezza della scrollbar */
+    width: 8px; 
 }
 
 .dropdown-list-generi::-webkit-scrollbar-thumb {
-    background-color: #00ffff;  /* Colore del "thumb" */
-    border-radius: 12px;  /* Arrotondamento del "thumb" */
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);  /* Aggiunta di una luce attorno al "thumb" */
+    background-color: #00ffff; 
+    border-radius: 12px;  
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);  
 }
 
 .dropdown-list-generi::-webkit-scrollbar-track {
-    background: #333;  /* Colore dello "track" (area della scrollbar) */
+    background: #333; 
     border-radius: 12px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);  /* Ombra interna per dare profondità */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
 .dropdown-list-generi::-webkit-scrollbar-corner {
-    background-color: transparent;  /* Se la scrollbar ha un angolo, lascialo trasparente */
+    background-color: transparent; 
 }
   
   .dropdown-item-generi {
@@ -82,4 +82,19 @@
     text-shadow: 0 0 5px #0ff;
     
   }
+  @media (max-width: 768px) {
+    .dropdown-generi {
+    
+      top: 100px;
+      border-radius: 8px;
+      
+      color: #fff;
+      margin: 1rem;
+      width: 200px;
+      
+      
+    }
   
+  
+  
+  }

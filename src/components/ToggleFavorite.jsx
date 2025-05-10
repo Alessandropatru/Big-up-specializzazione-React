@@ -15,11 +15,11 @@ export default function ToggleFavorite({ data }) {
         const button = wrapper?.querySelector("button");
     
         if (button) {
-            // Bounce
+            
             button.classList.add("bounce");
             setTimeout(() => button.classList.remove("bounce"), 300);
     
-            // Ripple
+            
             const ripple = document.createElement("span");
             ripple.className = "ripple";
             const rect = button.getBoundingClientRect();

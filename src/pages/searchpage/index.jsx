@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router";
 import CardGame from "../../components/CardGame";
 import useFetchSolution from "../../hook/useFetchSolution";
+import BackToTopButton from "../../components/BackToTop";
 import "../../index.css"; 
 
 export default function SearchPage() {
@@ -39,6 +40,8 @@ export default function SearchPage() {
                             </div>
                         ))}
                     </div>
+                    <BackToTopButton/>
+
                 </div>
            
         </>

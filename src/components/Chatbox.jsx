@@ -2,12 +2,12 @@ import { useContext, useState } from "react";
 import supabase from "../supabase/supabase-client";
 import RealtimeChat from "./RealtimeChat";
 import SessionContext from "../context/SessionContext";
-import "./css/chat.css"; // Importa il file CSS
+import "./css/chat.css"; 
 
 export default function Chatbox({ data }) {
     const { session } = useContext(SessionContext);
-    const [isOpen, setIsOpen] = useState(false); // Stato per apertura/chiusura della chat
-    const [messages, setMessages] = useState([]); // Stato per i messaggi locali
+    const [isOpen, setIsOpen] = useState(false); 
+    const [messages, setMessages] = useState([]); 
 
     const handleMessageSubmit = async (event) => {
         event.preventDefault();
@@ -15,7 +15,7 @@ export default function Chatbox({ data }) {
         const { message } = Object.fromEntries(new FormData(inputMessage));
 
         if (!session) {
-            // Mostra un messaggio nella chat se l'utente non è loggato
+            
             setMessages((prevMessages) => [
                 ...prevMessages,
                 { id: Date.now(), content: "Loggati prima di chattare!", system: true },
@@ -45,7 +45,7 @@ export default function Chatbox({ data }) {
 
     return (
         <div>
-            {/* Pulsante per aprire/chiudere la chat */}
+            
             <button
                 className="chat-toggle"
                 onClick={() => setIsOpen(!isOpen)}
@@ -53,14 +53,14 @@ export default function Chatbox({ data }) {
                 {isOpen ? "Chiudi Chat" : "Apri Chat"}
             </button>
 
-            {/* Contenitore della chat */}
+           
             {isOpen && (
                 <div className="chat-container">
                    <h4 className="mt-3  live-chat-title">
                         <span className="live-icon"></span> LIVE CHAT
                     </h4>
                     <div className="chat-messages">
-                        {/* Mostra i messaggi locali */}
+                       
                         {messages.map((msg) => (
                             <div
                                 key={msg.id}

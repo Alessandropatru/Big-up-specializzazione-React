@@ -5,7 +5,7 @@ import "../components/css/header.css";
 
 export default function SearchBar() {
     const navigate = useNavigate();
-    const location = useLocation(); // Ottieni il percorso corrente
+    const location = useLocation(); 
     const [searchTerm, setSearchTerm] = useState('');
     const [ariaInvalid, setAriaInvalid] = useState(false); 
 
@@ -20,7 +20,7 @@ export default function SearchBar() {
         }
     };
 
-    // Nascondi la SearchBar nelle pagine di login e registrazione
+    
     if (location.pathname === "/login" || location.pathname === "/register") {
         return null;
     }

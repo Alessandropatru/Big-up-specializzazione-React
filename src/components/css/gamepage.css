@@ -1,9 +1,10 @@
 .style-gamepage {
     display: grid; 
-    grid-template-columns: 2fr 1fr; /* Due colonne di larghezza uguale */
-    gap: 1px; /* Spaziatura tra le colonne */
+    grid-template-columns: 2fr 1fr; 
+    gap: 1px;
     
-    align-items: start; /* Allinea gli elementi in alto */
+    align-items: start; 
+   
 }
 
 .style-game-info {
@@ -13,8 +14,8 @@
 }
 button {
   
-    border: 2px solid red; /* Debug */
-    z-index: 1000; /* Porta il bottone in primo piano */
+    border: 2px solid red; 
+    z-index: 1000; 
     position: relative;
     pointer-events: auto;
     
@@ -23,6 +24,7 @@ button {
   position: relative;
   top: -60px;
   z-index: 1;
+ 
 }
 .glitch-text {
     position: relative;
@@ -91,19 +93,20 @@ button {
   
   .release-date {
     font-size: 1.6rem;
+  
     font-weight: 500;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
     
-    white-space: nowrap; /* Impedisce la rottura delle righe */
-    overflow: hidden; /* Nasconde il testo che non è ancora visibile */
-    border-right: 3px solid #ff1818; /* Simula il cursore della macchina da scrivere */
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 3px solid #ff1818; 
     animation: typing 4s steps(30) infinite, blink-caret 0.75s step-end infinite, glitch 1s infinite;
 }
 
 
-/* Animazione di scrittura lettera per lettera */
+
 @keyframes typing {
     0% {
         width: 0;
@@ -149,7 +152,7 @@ button {
   }
   
 
-/* Animazione per il cursore che lampeggia */
+
 @keyframes blink-caret {
     50% {
         border-color: transparent;
@@ -159,27 +162,27 @@ button {
     }
 }
 .game-description {
-    font-size: 1rem; /* Dimensione del font moderata */
-    line-height: 1.2; /* Spaziatura per migliorare la leggibilità */
-    color: #fff; /* Colore del testo bianco per contrastare con lo sfondo scuro */
+    font-size: 1rem; 
+    line-height: 1.2; 
+    color: #fff; 
    
-    text-align: center; /* Centra il testo */
+    text-align: center; 
    
-    margin: 0 auto; /* Centra il contenuto nella pagina */
-    padding: 10px 10px; /* Padding per far respirare il testo */
+    margin: 0 auto; 
+    padding: 10px 10px; 
     
-    border-radius: 10px; /* Bordi arrotondati per un aspetto morbido */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombra morbida per dare profondità */
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
     position: relative;
-    overflow: hidden; /* Nasconde gli eventuali overflow */
+    overflow: hidden; 
    
     display: inline-block;
-    opacity: 0; /* Inizialmente nascosto per l'animazione di apparizione */
-    animation: fadeIn 1s ease-out forwards; /* Animazione di fade-in */
-    animation-delay: 1s; /* Ritardo per far apparire il testo dopo un breve periodo */
+    opacity: 0; 
+    animation: fadeIn 1s ease-out forwards; 
+    animation-delay: 1s; 
   }
   
-  /* Animazione fade-in per l'apparizione del testo */
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -189,7 +192,7 @@ button {
     }
   }
   
-  /* Effetto glitch sottile */
+
   .game-description::after {
     content: '';
     position: absolute;
@@ -205,7 +208,7 @@ button {
     opacity: 0.3;
   }
   
-  /* Glitch animation */
+  
   @keyframes glitch-anim {
     0% {
       transform: translateX(-100%);
@@ -221,9 +224,9 @@ button {
   }
   
 .empty-star {
-    color: #cccccc; /* Colore personalizzato per le stelle vuote */
+    color: #cccccc; 
 }
-/* Button Style */
+
 .mural-btn {
     position: relative;
     display: inline-block;
@@ -236,7 +239,7 @@ button {
     background: #222;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: #333; /* Base for wall */
+    background-color: #333;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     z-index: 1;
@@ -260,7 +263,7 @@ button {
   
   .mural-btn:hover {
     transform: scale(1.1) rotate(3deg);
-    background-color: #ffcf2f; /* Brighter hover color */
+    background-color: #ffcf2f;
     border-color: #fcff2e;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5), 0 0 43px rgba(147, 53, 255, 0.8);
     animation: graffiti-glow 1.2s ease-out infinite alternate, paint-splash 0.8s ease-out infinite;
@@ -283,8 +286,16 @@ button {
     animation: text-vibration 0.3s ease-in-out infinite;
   }
   
-  /* Glowing text */
+  
   .mural-btn:hover span {
     text-shadow: 0 0 8px rgba(255, 59, 119, 1);
   }
-  
+  @media (max-width: 768px) {
+    .stelle{
+      position: relative;
+      top: -70px;
+      z-index: 1;
+      right: 30px;
+     
+    }
+  }

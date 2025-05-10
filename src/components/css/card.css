@@ -20,7 +20,7 @@
 	box-shadow: 0 25px 45px rgba(0, 255, 150, 0.15);
 }
 
-/* Immagine */
+
 .game-image {
 	width: 100%;
 	height: 300px;
@@ -35,7 +35,7 @@
 	filter: brightness(1);
 }
 
-/* Testi */
+
 .card-game h2 {
 	font-size: 1.3rem;
 	color: #eaeaea;
@@ -47,14 +47,14 @@
 	color: #888;
 }
 
-/* Button container */
+
 .container-btn-morph .container {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
 
-/* Pulsante super clean, dark elegant */
+
 .container .btn {
 	width: 220px;
 	height: 48px;

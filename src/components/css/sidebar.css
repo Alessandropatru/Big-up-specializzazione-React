@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-/* Applica il font a tutta la pagina */
+
 * {
   font-family: 'Russo One', sans-serif;;
 }
 
 
 
-/* Sidebar base */
+
 .your-sidebar-wrapper {
     width: 14rem;
     position: relative;
@@ -21,17 +21,17 @@
     transition: width 0.3s ease;
 }
 
-/* Sidebar chiusa */
+
 .your-sidebar-wrapper.closed {
-    width: 4.5rem; /* compattata */
+    width: 4.5rem; 
 }
 
-/* Sidebar aperta */
+
 .your-sidebar-wrapper.open {
-    width: 14rem; /* larghezza originale */
+    width: 14rem;
 }
 
-/* Bottone toggle */
+
 .toggle-drop-btn {
     position: relative;
     top: 44.5rem;
@@ -51,14 +51,14 @@
     transition: transform 0.3s ease;
 }
 
-/* Dropdown utente */
+
 .menu-dropdown-new {
     margin-bottom: 3rem;
     position: relative;
     top: 3.5rem;
 }
 
-/* Corpo della pagina */
+
 .custom-body-initial-page {
     position: relative;
     bottom: 20rem;
@@ -79,3 +79,50 @@
       transform: rotate(360deg);
     }
   }
+  @keyframes pulseGlowScroll {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInUpScroll {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #00ffc3;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 9999;
+  animation: pulseGlowScroll 3s infinite ease-in-out, slideInUpScroll 0.5s ease-out;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #00bfa6;
+  transform: scale(1.1) rotate(-10deg);
+  box-shadow: 0 0 30px rgba(0, 255, 204, 1);
+}
