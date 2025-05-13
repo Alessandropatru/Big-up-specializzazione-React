@@ -60,6 +60,6 @@
 
 
 
-https://big-up-specializzazione-react-82xo-c0tmeu6uf.vercel.app
+https://big-up-specializzazione-react.vercel.app
 
 
