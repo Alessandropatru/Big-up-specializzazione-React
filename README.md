@@ -56,9 +56,9 @@
 - I **toast personalizzati** vengono usati per informare l'utente su azioni importanti, come la registrazione, il login, il cambio dei dati del profilo e l'aggiunta/rimozione dei giochi dai preferiti.
 - Il design dei toast è in linea con il tema **cyberpunk** e fornisce feedback visivo immediato.
 
-## 📸 Screenshot
 
 
 
----
+
+https://big-up-specializzazione-react-frcqtw6eb.vercel.app
 
